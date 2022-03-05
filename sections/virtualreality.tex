@@ -1,10 +1,28 @@
-\section{Hardware}
+\section{Definition}
+\label{sec:definition}
+\setauthor{Quirin Ecker}
 
-\subsection{Grundlagen}
-\label{sec:basics}
+Laut Encyclopedia Britannica ist die virtuelle Realität folgendermaßen definiert:
+\begin{quotation}
+    virtual reality (VR), the use of computer modeling and simulation that enables a person to interact with an artificial three-dimensional (3-D) visual or other sensory environment.
+    VR applications immerse the user in a computer-generated environment that simulates reality through the use of interactive devices, which send and receive information and are worn as goggles, headsets, gloves, or body suits~\cite{LOWOOD_2021}.
+\end{quotation}
 
-\subsubsection{Arten von VR Headsets}
-\label{sec:vr-headset-types}
+\section{Reality Virtuality Continuum}
+\label{sec:reality-virtuality-continuum}
+
+Im Zuge der weiteren Forschung zum Thema VR wurde der Begriff Reality Virtuality Continuum eingeführt~\cite{MILGRAM_1994} (Siehe Abb.~\ref{fig:reality_virtuality_continuum})).
+In dieser Theorie wird erklärt, dass die von einem Benutzer erfahrenen Welten in einem Continuum zwischen völliger Realität und völliger Virtualität angesiedelt sind.
+Markante Punkte in diesem Kontinuum sind Augmented Reality und Augmented Virtuality.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{pics/reality_virtuality_continuum}
+    \caption{Reality Virtuality Continuum}
+    \label{fig:reality_virtuality_continuum}
+\end{figure}
+
+\section{Arten von Headsets}
 
 Bei VR Headsets werden grundsätzlich drei verschiedene Arten unterschieden:
 
@@ -28,47 +46,13 @@ Um die Immersion zu erhöhen wird das Smartphone in die VR-Brille eingeschoben.
 In diesem Fall dient das Telefon sowohl als Anzeigegerät als auch als Sensordatenprovider.
 Die VR-Brille besteht ausschließlich aus Linsen welche die Immersion der am Handy laufenden Applikation erhöht.
 
-\subsubsection{Tracking}
-\label{sec:tracking}
-
-Unter Tracking versteht man das ermitteln der Position von Objekten in der realen Welt.
-Folgend werden Arten das Tracking beschrieben.
-Diese beinhalten:
-
-\begin{itemize}
-    \item Outside In Tracking
-    \item Markerless Inside Out Tracking
-    \item Marker Based Inside Out Tracking
-\end{itemize}
-
-Wie im vorigen Abschnitt wird hier nur ein Überblick über diese Arten des Trackings gegeben.
-Für nähere Informationen wird auf~\cite{Dennis_Ziesecke_2019} verwiesen.
-
-\emph{Outside In Tracking} beschreibt das Ermitteln der Positionen durch außenstehende Sensoren.
-Das bedeutet, dass das zu trackende Objekt nicht weiß wo es sich im Raum befindet (Es ist passiv).
-Währenddessen ermitteln außenstehende Sensoren die Position der zu trackenden Objekte und gibt diese an die VR-Applikation weiter.
-
-Im Gegensatz dazu gibt es das \emph{Inside Out Tracking}.
-Hier ermitteln Sensoren, welche sich auf den Objekten befinden die Position derselbigen.
-Dabei gibt es zwei verschiedene Arten, welche bereits oben aufgelistet worden sind.
-
-Im Fall von \emph{Markerless Inside Out Tracking} wird natürliches Licht verwendet.
-Typischerweise werden hierbei Kameras verwendet.
-Die dabei aufgenommenen Bilder werden mithilfe von Bildverarbeitungsmethoden analysiert und somit wird die Position der Objekte ermittelt.
-
-Bei \emph{Marker Based Inside Out Tracking} wird im Gegensatz kein natürliches Licht verwendet.
-Hierbei ist sind die zu trackenden Objekte von Lighthouses (siehe Abschnitt~\ref{sec:lighthouse_tracking}) abhängig.
-Diese beleuchten den Raum mit nicht sichtbaren licht welches von Fotosensoren an den Geräten empfangen wird.
-
-
-\subsection{VR Headset}
-\label{sec:vr-headset}
-\setauthor{Quirin Ecker}
+\section{Virtual Reality Headsets}
+\label{sec:virtual-reality-headsets}
 
 Es sind einige VR Headsets auf dem Markt.
 Nach einer Statistik aus 2017 sind die beliebtesten VR Headset Hersteller Sony, Oculus und HTC (Siehe Abb.~\ref{fig:vr_headset_manufacturer_marketshare}).
 Folgend sind 3 VR Brillen beschrieben.
-Hierbei wurden die auf die Spielkonsolen-basierten VR Headsets nciht berücksichtigt.
+Hierbei wurden die auf die Spielkonsolen-basierten VR Headsets nicht berücksichtigt.
 
 \begin{figure}
     \centering
@@ -77,7 +61,7 @@ Hierbei wurden die auf die Spielkonsolen-basierten VR Headsets nciht berücksich
     \label{fig:vr_headset_manufacturer_marketshare}
 \end{figure}
 
-\subsubsection{HTC Vive Pro}\label{sec:htc-vive}
+\subsection{HTC Vive Pro}\label{sec:htc-vive}
 
 Wie bereits in Abschnitt~\ref{sec:vr-headset-types} beschrieben, gibt es von diesen Headsets verschiedene Modelle.
 Die HTC Vive Pro ist vom Typ ein tethered Headset mit dem Zusatz, dass auch sogenannte Light Houses gebraucht werden (siehe Abschnitt~\ref{sec:lighthouse_tracking}).
@@ -116,7 +100,7 @@ Andere Produkte, wie die im Folgendem beschriebene Oculus Quest benötigen solch
     \label{fig:vr_headset_prices}
 \end{figure}
 
-\subsubsection{Valve Index}
+\subsection{Valve Index}
 
 Die Valve Index ist eine VR-Brille welche von Valve entwickelt worden ist.
 Diese befindet sich genauso wie die HTC Vive Pro~\ref{sec:htc-vive} im teureren Spektrum~\cite{ALSOP_2019} der VR-Brillen und ist dem Typ tethered Headset~\ref{sec:vr-headset-types} zuzuordnen.
@@ -138,7 +122,7 @@ Diese befindet sich genauso wie die HTC Vive Pro~\ref{sec:htc-vive} im teureren 
     \item es wird ein Computer benötigt
 \end{itemize}
 
-\subsubsection{Oculus Quest 2}\label{sec:oculus-quest-2}
+\subsection{Oculus Quest 2}\label{sec:oculus-quest-2}
 
 Die Oculus Quest 2 ist eine VR-Brille welche von Facebook/Meta im Jahre 2020 entwickelt worden is~\cite{ADI_ROBERTSON_2020}.
 Diese Brille ist eine Mischung von einem tethered Headset und einem Standalone Headset~\ref{sec:vr-headset-types}.
@@ -162,13 +146,42 @@ Für den Aufbau werden nur das Headset und zwei Controller benötigt.
     \item weniger genaues Tracking~\cite{Macedo_2020}
 \end{itemize}
 
-\subsection{VR Controller}\label{sec:vr-controller}
+\section{Arten von Tracking}
 
-\subsection{Tracker}\label{sec:tracker}
+Unter Tracking versteht man das ermitteln der Position von Objekten in der realen Welt.
+Folgend werden Arten das Tracking beschrieben.
+Diese beinhalten:
 
-\subsubsection{Vive Tracker}\label{sec:vive-tracker}
+\begin{itemize}
+    \item Outside In Tracking
+    \item Markerless Inside Out Tracking
+    \item Marker Based Inside Out Tracking
+\end{itemize}
 
-\subsection{Lighthouse Tracking}\label{sec:lighthouse_tracking}
+Wie im vorigen Abschnitt wird hier nur ein Überblick über diese Arten des Trackings gegeben.
+Für nähere Informationen wird auf~\cite{Dennis_Ziesecke_2019} verwiesen.
+
+\emph{Outside In Tracking} beschreibt das Ermitteln der Positionen durch außenstehende Sensoren.
+Das bedeutet, dass das zu trackende Objekt nicht weiß wo es sich im Raum befindet (Es ist passiv).
+Währenddessen ermitteln außenstehende Sensoren die Position der zu trackenden Objekte und gibt diese an die VR-Applikation weiter.
+
+Im Gegensatz dazu gibt es das \emph{Inside Out Tracking}.
+Hier ermitteln Sensoren, welche sich auf den Objekten befinden die Position derselbigen.
+Dabei gibt es zwei verschiedene Arten, welche bereits oben aufgelistet worden sind.
+
+Im Fall von \emph{Markerless Inside Out Tracking} wird natürliches Licht verwendet.
+Typischerweise werden hierbei Kameras verwendet.
+Die dabei aufgenommenen Bilder werden mithilfe von Bildverarbeitungsmethoden analysiert und somit wird die Position der Objekte ermittelt.
+
+Bei \emph{Marker Based Inside Out Tracking} wird im Gegensatz kein natürliches Licht verwendet.
+Hierbei ist sind die zu trackenden Objekte von Lighthouses (siehe Abschnitt~\ref{sec:lighthouse_tracking}) abhängig.
+Diese beleuchten den Raum mit nicht sichtbaren licht welches von Fotosensoren an den Geräten empfangen wird.
+
+\section{Tracking}
+\label{sec:tracking}
+
+\subsection{Lighthouse Tracking}
+\label{sec:lighthouse_tracking}
 
 \subsubsection{Grundlagen}
 
@@ -221,7 +234,6 @@ Mit der neuen Version ist es auch möglich mehrere Base Stations zu verwenden.
 Durch die erhöhte Sichtweite und der Möglichkeit mehr wie zwei Lighthouses zu verwenden kann eine größere Spielfläche verwendet werden.
 Der Sichtkontakt der Lighhouses ist nicht mehr nötig~\cite{Cale_2019}.
 
-
 \subsection{Oculus Quest Tracking}
 \label{sec:oculus_quest_tracking}
 
@@ -272,126 +284,3 @@ Die Grenzen der Spielfläche werden dann angezeigt, wenn man sich diesen nähert
 Durch die 3d Map, welche schon in dem Abschnitt Headset Tracking beschrieben worden ist, kann auch eine Hilfestelle für den Nutzer geleistet werden.
 Hier versuch die Oculus Quest Umrisse von Gegenständen, Menschen und anderen Lebewesen in der virtuellen realität sichtbar zu machen, wenn sich der Nutzer diesen nähert~\cite{Oculus_Guardien}.
 
-\subsection{Wireless Adapter }
-
-\section{Software}
-
-\subsection{Game Engine}
-
-Es gibt mehrere Games Engines mit welchen eine VR Applikation entwickelt werden kann.
-In Abb.~\ref{fig:game_engine_marketshare} ist der Marktanteil verschiedener Engines abgebildet.
-Diese Daten sind aber mit Vorsicht zu genießen, da das Skript welche diese Daten geliefert hat nach einigen Kriterien handelt,(siehe~\cite{REDDIT_2018}).
-Dies bedeutet beispielsweise, dass nur Spiele mit einer Wikipedia Seite mit einberechnet werden.
-
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.4]{pics/game_engine_marketshare}
-    \caption{Game Engine Market-share~\cite{REDDIT_2018}}
-    \label{fig:game_engine_marketshare}
-\end{figure}
-
-\begin{figure}
-    \includegraphics[scale=0.4]{pics/programming_languages_hardest}
-    \caption{Schwerste Programmiersprachen~\cite{JAXCENTER_2018}}
-    \label{fig:hardest_programming_languages}
-\end{figure}
-
-\subsubsection{Unity}
-
-Unity ist eine Game Engine, welche von Unity Technologies initial exklusiv für Apple Mac OS X entwickelt wurde.
-Die Engine wurde portiert und kann heute auch auf Windows und auf der Linux Plattform benützt werden.
-Sie ist für alle im prinzip gratis bis zu einem bestimmten Umsatz.
-Auch wenn sie eine Einsteiger Engine genannt wird, ist sie trotzdem im professionellen Bereich in benutzung und viele bekannte Spiele, wie Pokemon GO, Among us und Hearthstone wurden in der Unity Engine entwickelt~\cite{Haas2014AHO,UNITY_DOWNLOAD,UNITY_PRICING,WIKIPEDIA_UNITY_GAME_LIST_2014}.
-
-\paragraph{Vorteile}
-
-\begin{itemize}
-    \item Gratis benutzung bis zu einem bestimmten Umsatz eines Produktes
-    \item Programmierbar in C\#, einer einfach zu erlernenden Sprachen siehe Abb.~\ref{fig:hardest_programming_languages}
-    \item Es kann für alle möglichen Plattformen ein Programm geschrieben werden~\cite{UNITY_PLATTFORMS}
-    \begin{itemize}
-        \item IOS
-        \item Android
-        \item Windows
-        \item Linux
-        \item WebGL
-    \end{itemize}
-\end{itemize}
-
-\paragraph{Nachteile}
-
-\begin{itemize}
-    \item im Vergleich zu Unreal weniger Market-share~\ref{fig:game_engine_marketshare}
-    \item geschlossener Source Code
-    \item schnellerer Kostenanfall wie bei Unreal
-\end{itemize}
-
-\subsubsection{Unreal Engine}
-\label{sec:unreal_engine}
-
-Unreal Engine wird von Epic Games entwickelt~\cite{UNEAL_ENGINE_OWNER_2022}.
-Diese Engine ist eine weit verbreitete Game Engine.
-Dies kann man Abbildung~\ref{fig:game_engine_marketshare} entnehmen.
-Viele Spiele wie Fortnite, Ark Survival Evolved, Borderlands 3 und Jedi Fallen Order sind mit dieser Engine entwickelt worden~\cite{WIKIPEDIA_UNREAL_GAME_LIST}.
-
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.3]{pics/visual_scripting_unreal_engine}
-    \caption{Visual Scripting in Unreal Engine 5}
-    \label{fig:visual_scripting_unreal_engine}
-\end{figure}
-
-\paragraph{Vorteile}
-
-\begin{itemize}
-    \item höchster Market-share nach Abb.~\ref{fig:game_engine_marketshare}
-    \item 'easy to learn' visual scripting~\ref{fig:visual_scripting_unreal_engine} %TODO: Statistic for visual scripting vs Code
-    \item Lizenzkosten von 5\% folgen erst bei einem Einkommen durch ein Produkt von 1.000.000\$~\cite{UNREAL_ENGINE_PRICING_2022}
-\end{itemize}
-
-\paragraph{Nachteile}
-
-\begin{itemize}
-    \item 5\% Lizenzkosten, wenn das Einkommen eines Produktes über 1.000.000\$ ist~\cite{UNREAL_ENGINE_PRICING_2022}
-    \item für erweiterte Funktionalität wird C++ benötigt, welches nach Umfrage in Abbildung~\ref{fig:hardest_programming_languages} die drittschwierigste Sprache zu erlernen ist
-\end{itemize}
-
-\subsubsection{Source Engine und Source 2 Engine}
-
-Es gibt mittlerweile 2 Iterationen dieser Engine.
-Zum einen die originale Source Engine und die Source Engine 2.
-Die Markteinführung der ursprünglichen Source Engine war im Juni 2004~\cite{Bryan_Wirtz_SOURCE_ENGINE_2022}.
-Daraufhin ist die Source 2 Engine im August 2014 erschienen~\cite{VALVE_DEVELOPER_COMMUNITY_SOURCE2}.
-Beide Engines sind von Valve entwickelt worden~\cite{VALVE_DEVELOPER_COMMUNITY_SOURCE, VALVE_DEVELOPER_COMMUNITY_SOURCE2}.
-Verantwortlich ist die Source 2 Engine für Spiele wie Dota 2 und Half Life Alyx~\cite{WIKIPEDIA_SOURCE2_ENGINE_GAME_LIST}.
-Andere Spiele wie Half Life 2, Counterstrike Source, Portal, Portal 2 und Counterstrike Global Offensive sind mit der originalen Source Engine entwickelt worden~\cite{WIKIPEDIA_SOURCE_ENGINE_GAME_LIST}.
-Auch als VR Entwicklungsumgebung eignet sich die Source 2 Engine, da sie für Half Life: Alyx, eines der erfolgreichsten VR Spiele benutzt worden ist~\cite{WIKIPEDIA_SOURCE2_ENGINE_GAME_LIST, Aden_Carter_2020}.
-Die folgenden Vorteile und Nachteile beziehen sich auf die Source 2 Engine.
-
-\paragraph{Vorteile}
-
-\begin{itemize}
-    \item Source Engine ist gratis zu nutzen und zu publizieren *(siehe Nachteile)
-\end{itemize}
-
-
-\paragraph{Nachteile}\label{pgr:cons}
-
-\begin{itemize}
-    \item kein hoher Market-share (siehe Abbildung~\ref{fig:game_engine_marketshare})
-    \item spiele, welche mit der Engine entwickelt worden sind, dürfen nur auf Steam publiziert werden~\cite{Brenna_Hillier_2015}
-\end{itemize}
-
-
-
-\subsection{VR Plugin}
-
-\subsection{Steam}
-
-\subsection{Vive Wireless}
-
-\subsection{Final IK Plugin}
-
-\subsection{IDE}
-
-\subsection{Modellierung}

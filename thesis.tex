@@ -35,9 +35,7 @@
 
 \pagestyle{plain}
 
-\renewcommand{\lstlistlistingname}{Quellcodeverzeichnis}
-
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{1}
 \tableofcontents
 \newpage
 \setcounter{RPages}{\value{page}}
@@ -46,14 +44,9 @@
 \pagestyle{scrheadings}
 
 \begin{spacing}{1}
-\chapter{Einleitung}\label{chapter:introduction}
+\chapter{Virtual Reality}\label{chapter:virtual_reality}
 \end{spacing}
-\input{./sections/introduction}
-
-\begin{spacing}{1}
-\chapter{Technologien}\label{chapter:tech}
-\end{spacing}
-\input{./sections/technologies}
+\input{./sections/virtualreality}
 
 \newpage
 \pagenumbering{Roman}
@@ -68,10 +61,5 @@
 \bibliography{bib}
 }
 \listoffigures
-\listoftables
-\lstlistoflistings
-\appendix
-\addchap{Anhang}
-\input{./sections/appendix}
 \end{document}
 
