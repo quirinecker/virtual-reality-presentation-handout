@@ -1,0 +1,161 @@
+\section{Objekterkennung}
+\label{sec:objekterkennung}
+
+Die relevante Quelle für diesen Abschnitt ist~\cite{Lordemann}
+Die Objekterkennung bei Computer funktioniert ähnlich wie die Objekterkennung bei Menschen.
+Das bedeutet, dass Objekterkennung immer gewisse Daten voraussetzt.
+Weiß ein Mensch nicht wie ein Apfel ausschaut, wird er einen Apfel auch nicht erkennen.
+
+\subsection{Analysieren eines Bildes}\label{subsec:analysing-image}
+
+Grundsätzlich benutzt ein Computer einzelne Pixel, um ein Objekt zu erkennen.
+Jeder Pixel speichert Helligkeit- und Farbinformationen.
+Existiert ein großer Unterschied zwischen zwei aneinanderliegenden Pixeln bedeuted das in den meisten Fällen, dass das die Grenze zwischen zwei Objekten in diesen Bild ist.
+Ist dieser Unterschied nur klein, sind es meist nur Schattierungen des Objektes.
+Diese Informationen dienen zu der Grundlage der Objekterkennung.
+
+\subsection{Menschliche Objekterkennung}\label{subsec:menschliche-objekterkennung}
+
+Die Objekterkennung von Menschen funktioniert ähnlich.
+Wie Bereits am Anfang diesem Abschnitt beschrieben, brauch der Mensch genauso Informationen um Objekte zu erkennen.
+Für uns ist der prozess sehr intuitiv, wobei der computer schwierigkeiten hat
+Der Mensch kann Formen erkennen, auch wenn sie teilweise verdeckt oder verdreht ist.
+Im Grunde ist die menschliche Objekterkennung noch weit unter dem Level einer algorithmischen Objekterkennung
+
+\subsection{Methoden der Objekterkennung}\label{subsec:methoden-der-objekterkennung}
+
+Es gibt verschiedene Methoden Objekte zu erkennen.
+Die einfachste wäre Bilder Pixelweise zueinander zu vergleichen.
+Das Ergebnise dieser Methode kann aber sehr Fehleranfällig sein, da große Änderungen zwischen zwei Bildern zu Fehler führen können.
+Auch ist sie sehr ineffizient, da sie das eine Bild mit sehr viel anderen Bildern vergleichen muss um auf das richtige Ergebnis zu kommen.
+
+Zwei etwas fortgeschrittenere Methoden sind:
+
+\begin{itemize}
+    \item Modellbasierte Methode
+    \item Erscheinungsbasierte Methoden
+\end{itemize}
+
+\emph{Modellbasierte Methode} konzentriert siech auf geometrische Eigenschaften wir die Kantenerkennung und Formen der zu erkennenden Gegenstande.
+
+Im Gegensatz konzentriert sich die \emph{Erscheinungsbasierte Methode} mit nicht geometrischen Eigenschaften wie Reflexion und Farben.
+
+\section{Kantenerkennung}\label{sec:kantenerkennung}
+
+Die relevante Quelle für die Kantenerkennung ist~\cite{Lordemann}
+Im Abschnitt~\ref{subsec:methoden-der-objekterkennung} wurde die Modellbasierte Objekterkennung beschrieben.
+Eine der Techniken, welche von dieser Methode benötigt wird, ist die Kantenerkennung.
+Wie der Name es schon sagt, ist die Kantenerkennung für das Erkennen der Kanten.
+
+\subsection{Funktionalität}
+\label{subsec:funktionalitaet}
+
+Damit der Computer rausfinden kann, wo eine Kante eines Objektes sich befindet benutzt es die Änderung der Grauwerte.
+Ist die Änderung klein ist es eine schwache Kante, ist sie groß ist es eine starke Kante.
+Durch mathematische Berechnungen kann der Computer diese berechnen.
+Weiteres kann der Computer auch die Datenrichtung berechnen, welche wichtig für das Erkennen eines Objektes ist
+
+\section{Antialiasing}
+\label{sec:antialiasing}
+
+Wie der Name bereits aussagt, geht es bei Antialiasing um das Verhindern von Aliasing.
+Weshalb es wichtig ist aliasing zu verstehen, um Antialiasing zu verstehen.
+
+\subsection{Aliasing}
+\label{subsec:aliasing}
+
+Aliasing ist ein Effekt, welcher sichtbar wird, wenn die Auflösung des Bildschirms niedrig ist.
+Dadurch, dass der Bildschirm aus rechteckigen Pixel besteht, ist es schwierig Kurven und Schrägen darzustellen.
+Resultat sind meistens sogenannte Treppen Effekte.
+Dies ist in Abb.~\ref{fig:aliasing} sichtbar~\cite{Hale_2019}.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.5]{pics/aliasing}
+    \caption{Aliasing Effekt~\cite{Hale_2019}}
+    \label{fig:aliasing}
+\end{figure}
+
+\subsection{Anti Aliasing Verfahren}
+\label{subsec:anti-aliasing-verfahren}
+
+Um den Aliasing Effekt nun zu mindern, werdend Kanten auf dem Bildschirm abgetastet und versucht einen Übergang zwischen Kante und anderen Objekten zu erstellen.
+Dieser Vorgang ist in Abb.~\ref{fig:anti-aliasing} sichtbar~\cite{Hale_2019}.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.4]{pics/anti_aliasing}
+    \caption{Anti Aliasing~\cite{Hale_2019}}
+    \label{fig:anti-aliasing}
+\end{figure}
+
+
+
+\section{Maschinelles Sehen}
+\label{sec:maschinelles-sehen}
+
+Maschinelles Sehen oder auch genannt maschine vision ist eine industrielle Anwendung von Computer Vision.
+Um maschinelles Sehen zu verstehen ist es also wichtig Computer Vision zu verstehen~\cite{Anonym_2014}.
+
+\subsection{Computer Vision}
+\label{subsec:computer-vision}
+
+Das Ziel von Computer Vision ist das Sehen es Mensches zu emulieren.
+Es versuch visuelle Aufgaben zu erledigen, welche ein Mensch erledigen kann.
+Das bedeutet das Erkennen von Personen, Zusammenhänge usw~\cite{Huang1996ComputerVE}.
+
+\subsection{Machine Vision}\label{subsec:machine-vision}
+
+Machine Vision erweitert die Computer Vision mit Aktionen, welche basierend auf der Computer Vision gemacht werden~\cite{Anonym_2014}.
+
+\section{Gesichtserkennung}
+\label{sec:gesichtserkennung}
+
+Für Gesichtserkennung wurde~\cite{Lewis_2021} als Quelle verwendet.
+
+Gesichtserkennung ist ein Teil von Computervision.
+Dabei geht es um das Analysieren eines Gesichts und das finden von Ähnlichkeiten dieser Gesichter.
+
+In der Praxis kann man diese Technologie benützen um Herauszufinden, ob eine Person auch wirklich die Person ist, welche sie sagt, dass sie ist, oder in vielen Personen nach einer Person zu suchen.
+
+Ähnlich wie bei der Objekterkennung benutzt auch die Gesichtserkennung daten, mit denen sie versucht eine Person zu erkennen.
+Hierbei versucht ein Algorithmus ein Bild in eine Matrix umzuwandeln.
+Diese Matrix besteht aus Zahlen, welche die Helligkeit and einer Coordinate X,Y beschreiben.
+Das Ziel ist ein Bild einfacher zu machen aber trotzdem noch einen eindeutigen Fingerabdruck zu behalten.
+Diese Vorgänge werden auch filtern genannt.
+Sie nehmen ein Bild, welches ziemlich komplex ist und filtern es in ein einfacheres Bild welches aber immmer noch eindeutig ist.
+Natürlich heute viele Algorithmen noch nicht auf dem Level, dass sie ein Bild vereinfachen können, ohne den eindeutigen Fingerabdruck zu verlieren kommen, dem aber sind dem nahe.
+Schlussendlich werden die, gefilterten einfachen Matritzen miteinander nach ähnlichkeit verglichen.
+
+
+\section{Segmentierung}
+\label{sec:segmentierung}
+
+Grundsätzlich ist die Segmentierung die Überprüfung jedes einzelnen Pixel und ob dieser zu einem Objekt von Interesse zählt.
+Genauer beschrieben untersucht die Operation der Bildsegmentierung die Bildpunkte und versucht diese zu gruppieren anhand der Eigenschaften eines gewissen Bildes.
+Im prinzip ist es die Trennung von Objekten untereinander und dem Hintergrund~{\cite{Kuerbig_2005}.
+Typischerweise ist Bildsegmentierung ein Teil der Bildverarbeitung und macht die einfacher~\cite{Erhardt_2017}.
+
+\subsection{Schwellenwertverfahren}
+\label{subsec:schwellenwertverfahren}
+
+Schwellenwertverfahren ist das einfachste Segmentbergungsverfahren.
+Bei diesem Verfahren der Schwellwert für ein gesuchtes Objekt gebildet, welcher entwerder durch ein automatisches oder manutelles Verfahren ermittelt werden knn.
+Mit diesem wert werden die einzelnen Pixel in zwei Gruppen gruppiert.
+Wenn der Grauwert eines Pixels den wert überschreitet, kommt er in die ein Gruppe, sonst in die andere.
+Resultierend ist ein Binärbild~\cite{Erhardt_2017}.
+
+\subsection{Ermittlung des Schwellenwertes}
+\label{subsec:ermittlung-des-schwellenwertes}
+
+Wie bereits besprochen gibt es zwei verschiedene Werte den Schwellenwert zu ermitteln.
+Diese kann \emph{manuell} oder \emph{automatisch} verfahren~\cite{Erhardt_2017}.
+
+Das \emph{manuelle} Verfahren findet meist einsatz in grafischen Oberflächen.
+Dabei setzt man den Schwellenwert für das gesuchte Objekt manuell~\cite{Erhardt_2017}.
+
+Beim \emph{automatischen} Verfahren wird ein Algorithmus verwendet, welches auf einem Histogramm basiert.
+Mit Minima und Maxima wird der Schwellenwert berechnet.
+Für genauere Informationen siehe~\cite{Erhardt_2017}.
+
+
